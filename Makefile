@@ -15,3 +15,6 @@ print:
 
 clean:
 	rm -f $(EXE)
+
+install-deps:
+	sudo apt-get install libgtk-4-dev
