@@ -30,7 +30,7 @@ static void activate(GtkApplication *app,
 
     gtk_grid_attach(GTK_GRID(grid), button, 1, 0, 1, 1);
     button = gtk_button_new_with_label("Quit");
-    g_signal_connect(button, "clicked", G_CALLBACK(gtk_application_quit), app);
+    g_signal_connect(button, "clicked", G_CALLBACK(gtk_window_close), NULL);
 
     gtk_grid_attach(GTK_GRID(grid), button, 0, 1, 2, 1);
 
